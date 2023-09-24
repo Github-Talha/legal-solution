@@ -1,11 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Solution</title>
+    <link
+      rel="shortcut icon"
+      href="./images/fav-icon.png"
+      type="image/x-icon"
+    />
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/e8b6b52c37.js" crossorigin="anonymous"></script>
+    <!--------------------------------- 
+        daisy ui and tailwind css link
+     ---------------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .eb-garamond {
+        font-family: "EB Garamond", serif;
+      }
+    </style>
+  </head>
+  <body class="eb-garamond">
+    <header class="container mx-auto">
+      <nav class="my-4">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl hidden md:block">
+              <p>
+                <img src="./images/logo2.png" alt="" />
+              </p>
+            </a>
+            <a class="btn btn-ghost normal-case text-xl md:hidden">
+              <p>
+                <img src="./images/logo.png" alt="" />
+              </p>
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-[#707070]">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Cases</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-amber-700 text-white px-7">Free Consultation</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--------------
+         hero section
+        --------------->
+      <div
+        class="hero"
+        style="
+          background-image: url(./images/banner.png);
+          background-position: center;
+          background-size: cover;
+        "
+      >
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content py-52">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <p class="mb-5">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button class="bg-amber-700 px-8 font-bold rounded text-xl py-4">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto">
+      <!-- legal practice area  -->
+      <section class="my-24">
+        <!-- title  -->
+        <div class="text-center mb-10">
+          <h3 class="text-3xl font-bold mb-4">The Legal Practice Area</h3>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <!-- categories cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- card 1 -->
+          <div class="space-y-5 flex flex-col items-center p-5 border-b">
+            <div>
+              <img src="./images/business.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">Business Law</h3>
+            <p class="text-center">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button class="bg-amber-700 px-2 py-1 rounded-full">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </button>
+          </div>
+          <!-- card 2 -->
+          <div class="space-y-5 flex flex-col items-center p-5 border-r border-b border-l">
+            <div>
+              <img src="./images/criminal.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">Business Law</h3>
+            <p class="text-center">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button class="bg-amber-700 px-2 py-1 rounded-full">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </button>
+          </div>
+          <!-- card 3 -->
+          <div class="space-y-5 flex flex-col items-center p-5 border-b">
+            <div>
+              <img src="./images/child.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">Business Law</h3>
+            <p class="text-center">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button class="bg-amber-700 px-2 py-1 rounded-full">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </button>
+          </div>
+          <!-- card 4 -->
+          <div class="space-y-5 flex flex-col items-center p-5 border-b md:border-b-0">
+            <div>
+              <img src="./images/education.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">Business Law</h3>
+            <p class="text-center">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button class="bg-amber-700 px-2 py-1 rounded-full">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </button>
+          </div>
+          <!-- card 5 -->
+          <div class="space-y-5 flex flex-col items-center p-5 border-x border-b md:border-b-0">
+            <div>
+              <img src="./images/divorce.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">Business Law</h3>
+            <p class="text-center">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button class="bg-amber-700 px-2 py-1 rounded-full">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </button>
+          </div>
+          <!-- card 6 -->
+          <div class="space-y-5 flex flex-col items-center p-5">
+            <div>
+              <img src="./images/tax.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">Business Law</h3>
+            <p class="text-center">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <button class="bg-amber-700 px-2 py-1 rounded-full">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container mx-auto"></footer>
+  </body>
 </html>
